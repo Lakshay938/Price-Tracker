@@ -1,7 +1,7 @@
 import axios from "axios";
 import { extractPrice,extractCurrency,extractDescription } from "../utils";
 import * as cheerio from 'cheerio';
-export async function scrapAmazonProduct(url: string){
+export async function scrapeAmazonProduct(url: string){
     if(!url) return ;
 
     const username = String(process.env.BRIGHT_DATA_USERNAME);
