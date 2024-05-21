@@ -1,6 +1,6 @@
 'use client'
 import { scrapAndStoreProduct } from '@/lib/actions';
-import { scrapAmazonProduct } from '@/lib/scraper';
+import { scrapeAmazonProduct } from '@/lib/scraper';
 import React, { FormEvent } from 'react'
 import { useState } from 'react';
 import { redirect } from 'next/navigation';

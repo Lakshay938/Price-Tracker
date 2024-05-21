@@ -4,7 +4,7 @@ import { connectToDB } from "../mongoose";
 import Product from "../models/product.model";
 import { User } from "@/types";
 import { Check } from "@/types";
-import { scrapAmazonProduct } from "../scraper";
+import { scrapeAmazonProduct } from "../scraper";
 import { redirect} from "next/navigation";
 import { getAveragePrice, getHighestPrice, getLowestPrice } from "../utils";
 import { generateEmailBody } from "../nodemailer";
@@ -14,7 +14,7 @@ export async function scrapAndStoreProduct (productUrl :string){
 
     try{
         connectToDB();
-        const scrapedProduct = await scrapAmazonProduct(productUrl);
+        const scrapedProduct = await scrapeAmazonProduct(productUrl);
         if(!scrapedProduct) return ;
 
         let product = scrapedProduct;
