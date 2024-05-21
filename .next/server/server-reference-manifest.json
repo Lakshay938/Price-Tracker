@@ -1,0 +1,76 @@
+{
+  "node": {
+    "4e4619aa20b9ca40cdc31fbbcd75b6f32c7a0331": {
+      "workers": {
+        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22addUserEmailToProduct%22%2C%22getAllProducts%22%2C%22scrapAndStoreProduct%22%2C%22getProductById%22%5D%5D%2C%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cnodemailer%5C%5Cindex.ts%22%2C%5B%22generateEmailBody%22%2C%22%24%24ACTION_0%22%2C%22sendEmail%22%5D%5D%5D&__client_imported__=!",
+        "app/products/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22addUserEmailToProduct%22%2C%22getAllProducts%22%2C%22scrapAndStoreProduct%22%2C%22getProductById%22%5D%5D%2C%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cnodemailer%5C%5Cindex.ts%22%2C%5B%22generateEmailBody%22%2C%22%24%24ACTION_0%22%2C%22sendEmail%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc",
+        "app/products/[id]/page": "rsc"
+      }
+    },
+    "50caa7147ac1b338ba6af1626c1466305e7fedd7": {
+      "workers": {
+        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22addUserEmailToProduct%22%2C%22getAllProducts%22%2C%22scrapAndStoreProduct%22%2C%22getProductById%22%5D%5D%2C%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cnodemailer%5C%5Cindex.ts%22%2C%5B%22generateEmailBody%22%2C%22%24%24ACTION_0%22%2C%22sendEmail%22%5D%5D%5D&__client_imported__=!",
+        "app/products/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22addUserEmailToProduct%22%2C%22getAllProducts%22%2C%22scrapAndStoreProduct%22%2C%22getProductById%22%5D%5D%2C%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cnodemailer%5C%5Cindex.ts%22%2C%5B%22generateEmailBody%22%2C%22%24%24ACTION_0%22%2C%22sendEmail%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc",
+        "app/products/[id]/page": "rsc"
+      }
+    },
+    "aef2455435b4f831380e63046ba263e7a4b045d3": {
+      "workers": {
+        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22addUserEmailToProduct%22%2C%22getAllProducts%22%2C%22scrapAndStoreProduct%22%2C%22getProductById%22%5D%5D%2C%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cnodemailer%5C%5Cindex.ts%22%2C%5B%22generateEmailBody%22%2C%22%24%24ACTION_0%22%2C%22sendEmail%22%5D%5D%5D&__client_imported__=!",
+        "app/products/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22addUserEmailToProduct%22%2C%22getAllProducts%22%2C%22scrapAndStoreProduct%22%2C%22getProductById%22%5D%5D%2C%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cnodemailer%5C%5Cindex.ts%22%2C%5B%22generateEmailBody%22%2C%22%24%24ACTION_0%22%2C%22sendEmail%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc",
+        "app/products/[id]/page": "rsc"
+      }
+    },
+    "f06fb41a043679960d30c47be4b803564ee1d7c6": {
+      "workers": {
+        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22addUserEmailToProduct%22%2C%22getAllProducts%22%2C%22scrapAndStoreProduct%22%2C%22getProductById%22%5D%5D%2C%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cnodemailer%5C%5Cindex.ts%22%2C%5B%22generateEmailBody%22%2C%22%24%24ACTION_0%22%2C%22sendEmail%22%5D%5D%5D&__client_imported__=!",
+        "app/products/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22addUserEmailToProduct%22%2C%22getAllProducts%22%2C%22scrapAndStoreProduct%22%2C%22getProductById%22%5D%5D%2C%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cnodemailer%5C%5Cindex.ts%22%2C%5B%22generateEmailBody%22%2C%22%24%24ACTION_0%22%2C%22sendEmail%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc",
+        "app/products/[id]/page": "rsc"
+      }
+    },
+    "1b4bf67e02897cb59bbfaf6745ace84c7f1382f6": {
+      "workers": {
+        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22addUserEmailToProduct%22%2C%22getAllProducts%22%2C%22scrapAndStoreProduct%22%2C%22getProductById%22%5D%5D%2C%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cnodemailer%5C%5Cindex.ts%22%2C%5B%22generateEmailBody%22%2C%22%24%24ACTION_0%22%2C%22sendEmail%22%5D%5D%5D&__client_imported__=!",
+        "app/products/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22addUserEmailToProduct%22%2C%22getAllProducts%22%2C%22scrapAndStoreProduct%22%2C%22getProductById%22%5D%5D%2C%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cnodemailer%5C%5Cindex.ts%22%2C%5B%22generateEmailBody%22%2C%22%24%24ACTION_0%22%2C%22sendEmail%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc",
+        "app/products/[id]/page": "rsc"
+      }
+    },
+    "2f3909cf6a969ecf843def526284ac7ad1716118": {
+      "workers": {
+        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22addUserEmailToProduct%22%2C%22getAllProducts%22%2C%22scrapAndStoreProduct%22%2C%22getProductById%22%5D%5D%2C%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cnodemailer%5C%5Cindex.ts%22%2C%5B%22generateEmailBody%22%2C%22%24%24ACTION_0%22%2C%22sendEmail%22%5D%5D%5D&__client_imported__=!",
+        "app/products/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22addUserEmailToProduct%22%2C%22getAllProducts%22%2C%22scrapAndStoreProduct%22%2C%22getProductById%22%5D%5D%2C%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cnodemailer%5C%5Cindex.ts%22%2C%5B%22generateEmailBody%22%2C%22%24%24ACTION_0%22%2C%22sendEmail%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc",
+        "app/products/[id]/page": "rsc"
+      }
+    },
+    "ea54b44fc83bc98842e735f8d8aa06aa934c04a1": {
+      "workers": {
+        "app/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22addUserEmailToProduct%22%2C%22getAllProducts%22%2C%22scrapAndStoreProduct%22%2C%22getProductById%22%5D%5D%2C%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cnodemailer%5C%5Cindex.ts%22%2C%5B%22generateEmailBody%22%2C%22%24%24ACTION_0%22%2C%22sendEmail%22%5D%5D%5D&__client_imported__=!",
+        "app/products/[id]/page": "(rsc)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cactions%5C%5Cindex.ts%22%2C%5B%22addUserEmailToProduct%22%2C%22getAllProducts%22%2C%22scrapAndStoreProduct%22%2C%22getProductById%22%5D%5D%2C%5B%22C%3A%5C%5CUsers%5C%5Clakshay%5C%5CDocuments%5C%5Cpricetracker%5C%5Clib%5C%5Cnodemailer%5C%5Cindex.ts%22%2C%5B%22generateEmailBody%22%2C%22%24%24ACTION_0%22%2C%22sendEmail%22%5D%5D%5D&__client_imported__=!"
+      },
+      "layer": {
+        "app/page": "rsc",
+        "app/products/[id]/page": "rsc"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "iAaJTgcvYnGej3hOvZ54p8A37ycpQ/m5scdlyHnm3jQ="
+}
