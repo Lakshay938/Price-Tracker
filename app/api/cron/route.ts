@@ -4,7 +4,7 @@ import { scrapAmazonProduct } from "@/lib/scraper";
 import { getAveragePrice, getEmailNotifType, getHighestPrice, getLowestPrice } from "@/lib/utils";
 import { generateEmailBody, sendEmail } from "@/lib/nodemailer";
 import { NextResponse } from "next/server";
-export const maxDuration = 300;
+export const maxDuration = 50;
 export const dynamic = 'force-dynamic'
 export const revalidate = 0;
 export async function GET(){
