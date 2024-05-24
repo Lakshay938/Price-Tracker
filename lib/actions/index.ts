@@ -1,5 +1,7 @@
 'use server'
 import { revalidatePath } from "next/cache";
+// import { useRouter } from "next/navigation";
+// import bodyParser from 'body-parser';
 import { connectToDB } from "../mongoose";
 import Product from "../models/product.model";
 import { User } from "@/types";
@@ -9,7 +11,9 @@ import { redirect} from "next/navigation";
 import { getAveragePrice, getHighestPrice, getLowestPrice } from "../utils";
 import { generateEmailBody } from "../nodemailer";
 import { sendEmail } from "../nodemailer";
+import { stringify } from "querystring";
 export async function scrapAndStoreProduct (productUrl :string){
+    // console.log(productUrl);
     if(!productUrl) return ;
 
     try{
@@ -18,6 +22,7 @@ export async function scrapAndStoreProduct (productUrl :string){
         if(!scrapedProduct) return ;
 
         let product = scrapedProduct;
+        // console.log(product);
         const existingProduct = await Product.findOne({url:scrapedProduct.url});
         if(existingProduct){
             const updatedPriceHistory : any=[
@@ -39,7 +44,10 @@ export async function scrapAndStoreProduct (productUrl :string){
         );
 
         revalidatePath(`/products/${newProduct._id}`);
+        return JSON.stringify(newProduct);
+        // console.log(newProduct);
         // redirect(`/products/${newProduct._id}`);
+        
     }
     catch(e: any){
         throw new Error(`Failed to create/update the product: ${e.message}`)
@@ -72,17 +80,26 @@ export async function getAllProducts (){
 }
 
 export async function addUserEmailToProduct(productId:string,userEmail:string){
+    // console.log(userEmail);
     try{
-        const product = await Product.findById(productId);
+        var product = await Product.findById(productId);
+        console.log(product);
         if(!product) return 
 
         const userExists = product.users.some((user:User) => user.email===userEmail);
+        // console.log(product.users[0].email);
         if(!userExists){
             product.users.push({email:userEmail});
-            await product.save();
+            console.log(product);
+            // const newProduct = JSON.parse(product);
+            const newProduct = await Product.findOneAndUpdate({_id:productId},product,{new:true});
+            console.log(newProduct);
+            // await Product.findOneAndUpdate({_id:productId},product,{new:true});
+            // await product.save();
+            // console.log('hello');
             
             const emailContent = await generateEmailBody(product,"WELCOME");
-            await sendEmail(emailContent,[userEmail]);
+            await sendEmail(emailContent,userEmail);
         }
     }
     catch(e){

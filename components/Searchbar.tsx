@@ -1,11 +1,13 @@
 'use client'
 import { scrapAndStoreProduct } from '@/lib/actions';
+import { useRouter } from 'next/navigation';
 import { scrapeAmazonProduct } from '@/lib/scraper';
 import React, { FormEvent } from 'react'
 import { useState } from 'react';
 import { redirect } from 'next/navigation';
 
 export const Searchbar = () => {
+    const router = useRouter();
     const isValidAmazonLink = (url:string)=>{
         try{
             const parsedURL = new URL (url);
@@ -34,7 +36,12 @@ export const Searchbar = () => {
         try{
             setIsLoading(true);
             const product = await scrapAndStoreProduct(searchPrompt);
-            // redirect(`/products/${product._id}`)
+            if(!product ) return ;
+            const newProduct = JSON.parse(product);
+            // redirect(`/products/${newProduct._id}`);
+            // console.log(product);
+        router.push(`/products/${newProduct._id}`);
+        
         }
         catch(e){
             console.log(e);
