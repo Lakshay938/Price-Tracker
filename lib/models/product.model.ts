@@ -22,6 +22,7 @@ const productSchema = new mongoose.Schema({
     isOutOfStock:{type:Boolean, default:false},
     users:[{
         email:{type:String,required:true},
+        default:[],
         _id: {type: mongoose.Schema.Types.ObjectId, auto: true},
     }]
 },{timestamps:true});

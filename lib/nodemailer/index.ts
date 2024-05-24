@@ -88,7 +88,7 @@ export async function generateEmailBody(
     },
     maxConnections:1
   })
-export const sendEmail  = async(emailContent:EmailContent,sendTo:string)=>{
+export const sendEmail  = async(emailContent:EmailContent,sendTo:string[])=>{
     const mailOptions = {
         from :'lakshay.rohilla@outlook.com',
         to:sendTo,

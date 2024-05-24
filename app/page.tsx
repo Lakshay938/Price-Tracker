@@ -3,6 +3,10 @@ import { Searchbar } from '@/components/Searchbar';
 import Image from 'next/image';
 import ProductCard from '@/components/ProductCard';
 import { getAllProducts } from '@/lib/actions';
+
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
+
 const Home = async() => {
   const allProducts = await getAllProducts();
   return (
