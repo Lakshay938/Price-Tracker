@@ -15,7 +15,7 @@ export const ProductDetails = async ({ params: { id } }: Props) => {
   const product: Product = await getProductById(id);
   if (!product) redirect("/");
   return (
-    <div className="product-container">
+    <div><div className="product-container">
       <div className="flex gap-28 xl:flex-row flex-col">
         <div className="product-image">
           <Image
@@ -45,7 +45,7 @@ export const ProductDetails = async ({ params: { id } }: Props) => {
                 <Image
                   src="/assets/icons/red-heart.svg"
                   alt="heart"
-                  width={20}
+                  width={20}`
                   height={20}
                 />
                 <p className="text-base font-semibold text-[#d46f77]">{product.reviewsCount}</p>
@@ -91,6 +91,7 @@ export const ProductDetails = async ({ params: { id } }: Props) => {
           <Modal productId={id}/>
         </div>
       </div>
+    </div>
     </div>
   );
 };
