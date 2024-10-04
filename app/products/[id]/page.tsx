@@ -94,4 +94,4 @@ export const ProductDetails = async ({ params: { id } }: Props) => {
     </div>
   );
 };
-export default ProductDetails;
+// export default ProductDetails;
