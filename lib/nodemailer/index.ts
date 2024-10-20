@@ -78,25 +78,74 @@ export async function generateEmailBody(
     return { subject, body };
   }
 
-  const transporter = nodemailer.createTransport({
-    pool:true,
-    service:'hotmail',
-    port:2525,
-    auth:{
-        user:'lakshay.rohilla@outlook.com',
-        pass:process.env.EMAIL_PASSWORD,
-    },
-    maxConnections:1
-  })
-export const sendEmail  = async(emailContent:EmailContent,sendTo:string[])=>{
-    const mailOptions = {
-        from :'lakshay.rohilla@outlook.com',
-        to:sendTo,
-        html:emailContent.body,
-        subject:emailContent.subject,
-    }
-    transporter.sendMail(mailOptions,(error:any,info:any)=>{
-        if(error) return console.log(error);
-        console.log('Email sent:',info);
-    })
-}
+  // const transporter = nodemailer.createTransport({
+  //   pool:true,
+  //   service:'hotmail',
+  //   port:2525,
+  //   auth:{
+  //       user:'lakshay.rohilla@outlook.com',
+  //       pass:process.env.EMAIL_PASSWORD,
+  //   },
+  //   maxConnections:1
+  // })
+  // const transporter = nodemailer.createTransport({
+  //   host: 'smtp.office365.com',
+  //   port: 587,
+  //   secure: false, // true for 465, false for other ports
+  //   auth: {
+  //     user: 'lakshay.rohilla@outlook.com',
+  //     pass: process.env.EMAIL_PASSWORD, // Consider switching to OAuth
+  //   },
+  // });
+  // const transporter = nodemailer.createTransport({
+  //   service: 'gmail',
+  //   auth: {
+  //     user: 'hgfe3279@gmail.com',
+  //     pass: process.env.GMAIL_PASSWORD, // Use an App Password if 2FA is enabled
+  //   },
+  // });
+  
+// export const sendEmail  = async(emailContent:EmailContent,sendTo:string[])=>{
+//   console.log("first")
+//     const mailOptions = {
+//         from :'hgfe3279@gmail.com',
+//         to:sendTo,
+//         html:emailContent.body,
+//         subject:emailContent.subject,
+//     }
+//     console.log("second")
+
+//     transporter.sendMail(mailOptions,(error:any,info:any)=>{
+//     console.log("third")
+
+//         if(error) return console.log(`********** ${error}`);
+//         console.log('Email sent:',info);
+//     })
+// }
+
+const transporter = nodemailer.createTransport({
+  host: 'smtp.zoho.in', // Zoho SMTP server
+  port: 587, // Use 587 for TLS, or 465 for SSL
+  secure: false, // Set to true if using port 465
+  auth: {
+    user: 'lakshay.rohilla@zohomail.in', // Your Zoho Mail email address
+    pass: process.env.ZOHO_MAIL_PASSWORD, // Your Zoho Mail password or app password
+  },
+});
+
+// Function to send email
+export const sendEmail = async (emailContent:EmailContent,sendTo:string[]) => {
+  const mailOptions = {
+    from: 'lakshay.rohilla@zohomail.in', // The sender's email address
+    to: sendTo,
+    subject: emailContent.subject,
+    html: emailContent.body,
+  };
+
+  try {
+    const info = await transporter.sendMail(mailOptions);
+    console.log('Email sent:', info.response);
+  } catch (error) {
+    console.error('Error sending email:', error);
+  }
+};
