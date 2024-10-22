@@ -8,13 +8,13 @@ const navIcons =[{src:'/assets/icons/search.svg' ,alt:'search'},
  ]
 const Navbar = () => {
   return (
-    <header className='w-full'>
+    <header className='fixed w-full z-[99999] blurred m-0 p-0'>
         <nav className='nav'>
         <Link href='/' className='flex items-center gap-1'>
             <Image src='/assets/icons/logo.png' width={27} height={27} alt='logo'>
             </Image>
             <p className='nav-logo'>
-                Price<span className='text-primary'>Tracker</span>
+                <span className="text-white-100">Price </span><span className='text-primary'>Tracker</span>
             </p>
         </Link>
         {/* <div className='flex items-center gap-5'>

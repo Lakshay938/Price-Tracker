@@ -7,6 +7,8 @@ interface Props{
 }
 export const ProductCard = ({product}:Props) => {
   return (
+    <div className='blurred  rounded-md md:rounded-lg p-3 min-h-[40vh] md:min-h-[65vh]  border-2 border-white-100'>
+
     <Link href={`/products/${product._id}`} className='product-card'>
 
         <div className='product-card_img-container'>
@@ -19,16 +21,17 @@ export const ProductCard = ({product}:Props) => {
         />
         </div>
         <div className='flex flex-col gap-3'>
-            <h3 className=''>{product.title}</h3>
+            <h3 className='text-white-100 '>{product.title}</h3>
             <div className='flex justify-between'>
-                <p className='text-black opacity-50 text-lg capitalize'>{product.category}</p>
-                <p className=''>
+                <p className='text-white-100 opacity-50 text-lg capitalize'>{product.category}</p>
+                <p className=' text-white-100'>
                     <span>{product?.currency}</span>
                     <span>{product?.currentPrice}</span>
                 </p>
             </div>
         </div>
     </Link>
+        </div>
   )
 }
 

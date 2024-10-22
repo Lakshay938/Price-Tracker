@@ -5,16 +5,16 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
 const heroImages = [
-    {src:'/assets/images/hero-1.svg',alt:'smartwatch'},
-    {src:'/assets/images/hero-2.svg',alt:'bag'},
     {src:'/assets/images/hero-3.svg',alt:'lamp'},
+    {src:'/assets/images/hero-2.svg',alt:'bag'},
+    {src:'/assets/images/hero-1.svg',alt:'smartwatch'},
     {src:'/assets/images/hero-4.svg',alt:'air fryer'},
     {src:'/assets/images/hero-5.svg',alt:'chair'},
 ]
 
 export const HeroCarousel = () => {
   return (
-    <div className='hero-carousel '>
+    <div className=' hero-carousel blurred mt-[12vh]'>
         <Carousel
         showThumbs={false}
         autoPlay
