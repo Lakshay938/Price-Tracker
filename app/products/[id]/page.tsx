@@ -17,10 +17,12 @@ type Props = {
 const ProductDetails = async ({ params: { id } }: Props) => {
   // let [isOpen, setIsOpen] = useState(false)
   // const {isModelOpen, toggleisModelOpen} = useContext(ModelContext);
-  const product: Product = await getProductById(id);
-  if (!product) redirect("/");
-  return (
-    <div><div className= "product-container">
+  try{
+
+    const product: Product = await getProductById(id);
+    if (!product) redirect("/");
+    return (
+      <div><div className= "product-container">
       <div className="flex gap-28 xl:flex-row flex-col justify-center">
         <div className="product-image ">
           <Image
@@ -29,7 +31,7 @@ const ProductDetails = async ({ params: { id } }: Props) => {
             height={580}
             width={400}
             className="mx-auto h-fit"
-          />
+            />
         </div>
         <div className="blurred w-fit h-fit rounded-md md:rounded-lg border py-5 px-5 flex-1 flex flex-col">
           <div className="flex justify-between flex-wrap items-start gap-5 pb-6">
@@ -41,20 +43,20 @@ const ProductDetails = async ({ params: { id } }: Props) => {
                 href={product.url}
                 target="_blank"
                 className="text-base w-fit text-primary-orange font-semibold opacity-50"
-              >
+                >
                 Visit Product
               </Link>
             </div>
             <div className="flex items-center gap-3">   
               {/* <div className="product-hearts">
                 <Image
-                  src="/assets/icons/red-heart.svg"
-                  alt="heart"
-                  width={20}`
-                  height={20}
+                src="/assets/icons/red-heart.svg"
+                alt="heart"
+                width={20}`
+                height={20}
                 />
                 <p className="text-base font-semibold text-[#d46f77]">{product.reviewsCount}</p>
-              </div> */}
+                </div> */}
               
             </div>
           </div>
@@ -95,11 +97,15 @@ const ProductDetails = async ({ params: { id } }: Props) => {
               
           <Modal 
           productId={id} 
-           />
+          />
         </div>
       </div>
     </div>
     </div>
   );
+}
+  catch(e){
+    console.log(e);
+  }
 };
 export default ProductDetails;
